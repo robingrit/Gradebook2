@@ -9,47 +9,45 @@ import java.util.Scanner;
 public class Catalogue {
 
 
-
-
     private List<Student> Studentsname;
 
-    public Catalogue(String betyg ) {
+    //constructer är obslelit för tillfället
+    public Catalogue() {
 
         Studentsname = new ArrayList<>();
     }
-
-
-
-
-
-
-    public List<Student> getStudentsname() {
-
-
-        return Studentsname;
-    }
-    public void LoadStudent(){
-        File f1 = new File("C:\\Users\\Rezz\\IdeaProjects\\Gradebook\\src\\com\\company\\Student.txt");
+        public  void setStudentList(){
+        File f1 = new File("C:\\Users\\zorpi\\Desktop\\Gradebook2\\src\\com\\company\\Student.txt");
         Scanner scanner = null;
         try {
             scanner = new Scanner(f1);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        List<Student> StudentList= new ArrayList<>();
-        while(scanner.hasNextLine()){
-            String data[]=scanner.nextLine().split(",");
+        Studentsname = new ArrayList<>();
+        while (scanner.hasNextLine()) {
+            String data[] = scanner.nextLine().split(",");
+            int id = Integer.parseInt(data[0]);
+            String fname = data[1];
+            String lname = data[2];
+            int betyg = Integer.parseInt(data[3]);
 
-            StudentList.add(new Student(Integer.parseInt(data[0]),data[1],data[2],data[3]));
+            Studentsname.add(new Student(id, fname, lname, betyg));
+
+
         }
         scanner.close();
-        System.out.println(StudentList);
-        for (Student S : StudentList){
+    }
+
+    public void Loadstudents(){
+
+        System.out.println(Studentsname.size());
+        for (Student S : Studentsname){
             System.out.println(S);
         }
     }
 
-    public void AddStudent(Student student){
-        Studentsname.add(student);
-    }
+
+
+
 }

@@ -3,10 +3,20 @@ package com.company;
 class Student{
     public int id;
     public String fName;
-    public String mName;
-    public String lName;
 
-    private Student student;
+    public String lName;
+    public  int betygen;
+
+    // consturkter
+    public Student(int id, String fName, String lName, int betygen) {
+        super();
+        this.id = id;
+        this.fName = fName;
+        this.betygen = betygen;
+        this.lName = lName;
+    }
+
+
     public int getId() {
         return id;
     }
@@ -19,11 +29,11 @@ class Student{
     public void setfName(String fName) {
         this.fName = fName;
     }
-    public String getmName() {
-        return mName;
+    public int getbetygen() {
+        return betygen;
     }
-    public void setmName(String mName) {
-        this.mName = mName;
+    public void setmName(int betygen) {
+        this.betygen = betygen;
     }
     public String getlName() {
         return lName;
@@ -31,17 +41,12 @@ class Student{
     public void setlName(String lName) {
         this.lName = lName;
     }
-    public Student(int id, String fName, String mName, String lName) {
-        super();
-        this.id = id;
-        this.fName = fName;
-        this.mName = mName;
-        this.lName = lName;
-    }
+
+
+
     @Override
     public String toString() {
-        return "Employee [id=" + id + ", fName=" + fName + ", mName="
-                + mName + ", lName=" + lName + "]";
+        return "Employee [id=" + id + ", fName=" + fName + ", lName=" + lName + ", betygen " + betygen + "]";
     }
 
 }

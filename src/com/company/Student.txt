@@ -1,5 +1,5 @@
-000,name1,middle,Betyga
-001,name2,middle,Betyga
-002,name3,middle,Betyga
-003,name4,middle,Betyga
-004,name5,middle,Betyga
+000,Lars,Gustavsson,1
+001,Kalle,Anka,2
+002,Ronja,Thelin,3
+003,Markus,Labidi,4
+004,Gunnar,Oxmark,5
