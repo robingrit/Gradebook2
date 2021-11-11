@@ -1,52 +1,46 @@
 package com.company;
 
-class Student{
-    public int id;
-    public String fName;
+import java.util.List;
 
-    public String lName;
-    public  int betygen;
+class Student{
+    private int id;
+    private String fName;
+    private String lName;
+
+
+
+    private Recordbook recordbook;
+
+
 
     // consturkter
-    public Student(int id, String fName, String lName, int betygen) {
-        super();
+    public Student(int id, String fName, String lName, Recordbook recordbook) {
         this.id = id;
         this.fName = fName;
-        this.betygen = betygen;
         this.lName = lName;
+        this.recordbook = recordbook;
     }
 
 
-    public int getId() {
-        return id;
-    }
-    public void setId(int id) {
-        this.id = id;
+
+
+
+
+    public Recordbook getRecordbook() {
+        return recordbook;
     }
     public String getfName() {
         return fName;
     }
-    public void setfName(String fName) {
-        this.fName = fName;
-    }
-    public int getbetygen() {
-        return betygen;
-    }
-    public void setmName(int betygen) {
-        this.betygen = betygen;
-    }
     public String getlName() {
         return lName;
     }
-    public void setlName(String lName) {
-        this.lName = lName;
-    }
+
 
 
 
     @Override
     public String toString() {
-        return "Employee [id=" + id + ", fName=" + fName + ", lName=" + lName + ", betygen " + betygen + "]";
+        return   fName + " " + lName + "\n" + "Betygen: " + getRecordbook().getBetygen() +" " + getRecordbook().getBetyg1() +" "+ getRecordbook().getBetyg2()+ "\r";
     }
-
 }

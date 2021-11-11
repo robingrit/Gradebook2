@@ -1,5 +1,5 @@
-000,Lars,Gustavsson,1
-001,Kalle,Anka,2
-002,Ronja,Thelin,3
-003,Markus,Labidi,4
-004,Gunnar,Oxmark,5
+000,Lars,Gustavsson,4,2,2
+001,Kalle,Anka,2,3,2
+002,Ronja,Thelin,3,4,2
+003,Markus,Labidi,4,3,2
+004,Gunnar,Oxmark,5,1,2
