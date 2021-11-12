@@ -51,11 +51,13 @@ public class Recordbook {
     public Recordbook(){
 
     }
+    //
     public double avarageGrade (){
 
         return Math.floor(betygen +betyg1 +betyg2)/3;
 
     }
+    /// Lägger till betyg en soterar från minst  till högst sedan skickar tillbaka första indexen
     public int lowestGrade(){
         List<Integer> low = new ArrayList<>();
         low.add(betygen);
@@ -65,6 +67,7 @@ public class Recordbook {
         Collections.sort(low);
         return low.get(0);
     }
+    /// Lägger till betyg en soterar från minst  till högst sedan skickar tillbaka sista indexen
     public int highestGrade(){
         List<Integer> high = new ArrayList<>();
         high.add(betygen);
@@ -75,11 +78,7 @@ public class Recordbook {
         return high.get(2);
     }
 
-    //metod lowest grade
-    //int num3 = Math.min( num1, num2 );
-    //int num5 = Math.min( num3 ,num4);
 
-    // highest sameshit men med Math.max
 
 
 }

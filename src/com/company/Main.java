@@ -40,9 +40,9 @@ public class Main {
 
             while (on == 0) {
                 System.out.println(currentStudent.getlName());
-                //System.out.println(currentStudent.getStudentGrades().allGrades());
+
                 System.out.println("Options: ");
-                System.out.println("============================== ");
+                System.out.println("************************ ");
                 System.out.println("1. Highest Grade ");
                 System.out.println("2. Lowest Grade ");
                 System.out.println("3. Average Grade ");
@@ -52,24 +52,24 @@ public class Main {
 
                 switch (val) {
                     case "1" -> {
-                        System.out.println("============================== ");
+                        System.out.println("************************ ");
                         System.out.println("Highest Grade: " + currentStudent.getRecordbook().highestGrade());
                         System.out.println("============================== ");
                     }
                     case "2" -> {
-                        System.out.println("============================== ");
+                        System.out.println("************************");
                         System.out.println("Lowest Grade: " + currentStudent.getRecordbook().lowestGrade());
                         System.out.println("============================== ");
                     }
                     case "3" -> {
-                        System.out.println("============================== ");
+                        System.out.println("************************");
                         System.out.println("Average Grade: " + currentStudent.getRecordbook().avarageGrade());
-                        System.out.println("============================== ");
+                        System.out.println("************************");
                     }
                     case "4" -> {
-                        System.out.println("============================== ");
-                        System.out.println("Good Bye");
-                        System.out.println("============================== ");
+                        System.out.println("************************");
+                        System.out.println("Program is off");
+                        System.out.println("************************");
                         on++;
 
                     }
