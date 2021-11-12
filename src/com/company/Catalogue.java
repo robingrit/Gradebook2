@@ -54,7 +54,7 @@ public class Catalogue {
 
     }
 
-
+/// ändra till id istället för namn
     public Student findStudent(String inputName) {
         Student student;
 
