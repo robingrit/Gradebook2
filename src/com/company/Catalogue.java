@@ -53,42 +53,7 @@ public class Catalogue {
         }
 
     }
-    /*public void Sebetyg(){
-        int i = 0;
-        do {
-            Scanner input = new Scanner(System.in);
 
-            String namn = input.nextLine();
-
-            if (namn.equals("lars")){
-
-
-                System.out.println(getStudentslist().get(0).betygen+ " " + getStudentslist().get(0).betyg1 + " " + getStudentslist().get(0).betyg2);
-                i = 1;
-            }
-            else if (namn.equals("kalle")){
-                System.out.println(getStudentslist().get(1).betygen);
-                i = 2;
-            }
-            else if (namn.equals("ronja")){
-                System.out.println(getStudentslist().get(2).betygen);
-                i = 2;
-            }
-            else if (namn.equals("markus")){
-                System.out.println(getStudentslist().get(3).betygen);
-                i = 2;
-            }
-            else if (namn.equals("gunnar")){
-                System.out.println(getStudentslist().get(4).betygen);
-                i = 2;
-            }
-            else{
-                i = 5;
-            }
-
-        }
-        while (i < 5);
-    }*/
 
     public Student findStudent(String inputName) {
         Student student;
